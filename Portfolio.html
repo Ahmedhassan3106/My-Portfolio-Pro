@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./ProtfolioStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Ahmed</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Hi, I'm <span class="name"></span></h1>
+                    <h2 class="department"></h2>
+                    <p>a B.Sc degree student in Software Engineering studying at Jimma University institute of technology (JIT).</p>
+                    <button class="btn" id="learn-more">Learn More About Me</button>
+                </div>
+                <div class="home-image">
+                    <img src="./img/image-1.jpg" alt="Profile Photo" id="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <!-- Skills will be added dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-container">
+                <!-- Projects will be added dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="./img/image-2.jpg" alt="About Photo">
+                </div>
+                <div class="about-text">
+                    <p id="about-text"></p>
+                    <button class="btn" id="change-about">Tell Me More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <form action="https://formsubmit.co/barkhadhasanmohamed5787@gmail.com" method="POST">
+                <!-- Add a hidden input for the subject -->
+                <input type="hidden" name="_subject" value="New Portfolio Message!">
+                <!-- Add your form fields -->
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <!-- Add honeypot field to prevent spam -->
+                <input type="text" name="_honey" style="display:none">
+                <!-- Add redirect after submit -->
+                <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://github.com/Ahmedhassan3106"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/in/ahmed-hassan-619318363"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/Zaamb55"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/just_ahmet__?igsh=MTUxcG85ajF2eHJvcQ=="><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Ahmed Hassan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./portfolioJScript.js"></script>
+</body>
+</html>
